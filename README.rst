@@ -1,5 +1,7 @@
-DAWG
+DAWG-patched
 ====
+
+DAWG library patched so that it will install on newer versions of Python.
 
 .. image:: https://travis-ci.org/pytries/DAWG.png?branch=master
     :target: https://travis-ci.org/pytries/DAWG
