@@ -1,3 +1,5 @@
+# distutils: language = c++
+# cython: language_level=2
 # cython: profile=False
 # cython: embedsignature=True
 from __future__ import unicode_literals
