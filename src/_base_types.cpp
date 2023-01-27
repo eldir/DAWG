@@ -34,7 +34,6 @@
   #define DL_EXPORT(t) t
 #endif
 #define __PYX_COMMA ,
-#ifndef HAVE_LONG_LONG
   #if PY_VERSION_HEX >= 0x02070000
     #define HAVE_LONG_LONG
   #endif
@@ -197,6 +196,8 @@
 #if CYTHON_USE_PYLONG_INTERNALS
   #if PY_VERSION_HEX <= 0x030a00f0
     #include "longintrepr.h"
+  #else
+    #include "Python.h"
   #endif
   #undef SHIFT
   #undef BASE
